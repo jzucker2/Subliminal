@@ -40,6 +40,15 @@
 		50A59BDB178490C2002A863A /* SLGeometryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */; };
 		50F3E18C1783A5CB00C6BD1B /* SLGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F3E18A1783A5CB00C6BD1B /* SLGeometry.h */; };
 		50F3E18E1783A60100C6BD1B /* SLGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F3E18B1783A5CB00C6BD1B /* SLGeometry.m */; };
+		97378AA218B7F08F00B6188E /* SLTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 97378AA018B7F08F00B6188E /* SLTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97378AA318B7F08F00B6188E /* SLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97378AA118B7F08F00B6188E /* SLTableView.m */; };
+		97378AAB18B7F3F400B6188E /* SLNavigationBarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97378AAA18B7F3F400B6188E /* SLNavigationBarTest.m */; };
+		97378AAF18B7F42E00B6188E /* SLNavigationBarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97378AAD18B7F42E00B6188E /* SLNavigationBarTestViewController.m */; };
+		97378AB018B7F42E00B6188E /* SLNavigationBarTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97378AAE18B7F42E00B6188E /* SLNavigationBarTestViewController.xib */; };
+		975393DB18B7EBC800BF93F6 /* SLToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 975393D918B7EBC800BF93F6 /* SLToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975393DC18B7EBC800BF93F6 /* SLToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 975393DA18B7EBC800BF93F6 /* SLToolbar.m */; };
+		975393E218B7EDD500BF93F6 /* SLScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 975393E018B7EDD500BF93F6 /* SLScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975393E318B7EDD500BF93F6 /* SLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 975393E118B7EDD500BF93F6 /* SLScrollView.m */; };
 		97BB77A018B7E6E4003FDE04 /* SLNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB779E18B7E6E4003FDE04 /* SLNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97BB77A118B7E6E4003FDE04 /* SLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BB779F18B7E6E4003FDE04 /* SLNavigationBar.m */; };
 		CA75E78216697A1200D57E92 /* SLDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = CA75E78016697A1200D57E92 /* SLDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -266,6 +275,15 @@
 		50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGeometryTestViewController.m; sourceTree = "<group>"; };
 		50F3E18A1783A5CB00C6BD1B /* SLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGeometry.h; sourceTree = "<group>"; };
 		50F3E18B1783A5CB00C6BD1B /* SLGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGeometry.m; sourceTree = "<group>"; };
+		97378AA018B7F08F00B6188E /* SLTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableView.h; sourceTree = "<group>"; };
+		97378AA118B7F08F00B6188E /* SLTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableView.m; sourceTree = "<group>"; };
+		97378AAA18B7F3F400B6188E /* SLNavigationBarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLNavigationBarTest.m; sourceTree = "<group>"; };
+		97378AAD18B7F42E00B6188E /* SLNavigationBarTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLNavigationBarTestViewController.m; sourceTree = "<group>"; };
+		97378AAE18B7F42E00B6188E /* SLNavigationBarTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLNavigationBarTestViewController.xib; sourceTree = "<group>"; };
+		975393D918B7EBC800BF93F6 /* SLToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLToolbar.h; sourceTree = "<group>"; };
+		975393DA18B7EBC800BF93F6 /* SLToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLToolbar.m; sourceTree = "<group>"; };
+		975393E018B7EDD500BF93F6 /* SLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScrollView.h; sourceTree = "<group>"; };
+		975393E118B7EDD500BF93F6 /* SLScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScrollView.m; sourceTree = "<group>"; };
 		97BB779E18B7E6E4003FDE04 /* SLNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLNavigationBar.h; sourceTree = "<group>"; };
 		97BB779F18B7E6E4003FDE04 /* SLNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLNavigationBar.m; sourceTree = "<group>"; };
 		CA75E78016697A1200D57E92 /* SLDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDevice.h; sourceTree = "<group>"; };
@@ -496,6 +514,16 @@
 				50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */,
 			);
 			name = "SLGeometry Tests";
+			sourceTree = "<group>";
+		};
+		97378AB118B7F43B00B6188E /* SLNavigationBar Tests */ = {
+			isa = PBXGroup;
+			children = (
+				97378AAA18B7F3F400B6188E /* SLNavigationBarTest.m */,
+				97378AAD18B7F42E00B6188E /* SLNavigationBarTestViewController.m */,
+				97378AAE18B7F42E00B6188E /* SLNavigationBarTestViewController.xib */,
+			);
+			name = "SLNavigationBar Tests";
 			sourceTree = "<group>";
 		};
 		CAC388011641CD4800F995F9 /* Internal */ = {
@@ -750,6 +778,12 @@
 				DB501DC817B9669A001658CB /* SLStatusBar.m */,
 				97BB779E18B7E6E4003FDE04 /* SLNavigationBar.h */,
 				97BB779F18B7E6E4003FDE04 /* SLNavigationBar.m */,
+				975393D918B7EBC800BF93F6 /* SLToolbar.h */,
+				975393DA18B7EBC800BF93F6 /* SLToolbar.m */,
+				975393E018B7EDD500BF93F6 /* SLScrollView.h */,
+				975393E118B7EDD500BF93F6 /* SLScrollView.m */,
+				97378AA018B7F08F00B6188E /* SLTableView.h */,
+				97378AA118B7F08F00B6188E /* SLTableView.m */,
 			);
 			path = "User Interface Elements";
 			sourceTree = "<group>";
@@ -866,6 +900,7 @@
 				F013798E16D0843B009BAF22 /* SLTerminal Tests */,
 				F078C0431808BF0D000767D2 /* SLWebView Tests */,
 				F089F98E17458B7400DF1F25 /* SLWindow Tests */,
+				97378AB118B7F43B00B6188E /* SLNavigationBar Tests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -959,7 +994,9 @@
 				F016493D16D42E3C000AEB50 /* SLTestController+Internal.h in Headers */,
 				F0C07A381703F95B00C93F93 /* SLAlert.h in Headers */,
 				F0C07A3F1703F9A900C93F93 /* SLUIAElement+Subclassing.h in Headers */,
+				975393DB18B7EBC800BF93F6 /* SLToolbar.h in Headers */,
 				F0C07A471703FEF600C93F93 /* SLButton.h in Headers */,
+				97378AA218B7F08F00B6188E /* SLTableView.h in Headers */,
 				F0C07A4B1704002100C93F93 /* SLTextField.h in Headers */,
 				F0C07A4F1704009E00C93F93 /* SLWindow.h in Headers */,
 				F0C07A531704011400C93F93 /* SLKeyboard.h in Headers */,
@@ -969,6 +1006,7 @@
 				F0A04E1D1749F70F002C7520 /* SLElement.h in Headers */,
 				2CE9AA4C17E3A747007EF0B5 /* SLSwitch.h in Headers */,
 				F089F98617445D9A00DF1F25 /* SLStaticElement.h in Headers */,
+				975393E218B7EDD500BF93F6 /* SLScrollView.h in Headers */,
 				F02DF30817EC064F00BE28BF /* UIScrollView+SLProgrammaticScrolling.h in Headers */,
 				F00800CE174C1C64001927AC /* SLPopover.h in Headers */,
 				F043469F175ACE3A00D91F7F /* NSObject+SLAccessibilityDescription.h in Headers */,
@@ -1132,6 +1170,7 @@
 				F043A9C7172A160600A4FD1D /* SLElementVisibilityTest.html in Resources */,
 				F08005591730762C00198F6F /* Inklings~iPhone.webarchive in Resources */,
 				F0C4DB4817388ACA00111149 /* SLElementVisibilityTestSuperviewWithVisibleSubview.xib in Resources */,
+				97378AB018B7F42E00B6188E /* SLNavigationBarTestViewController.xib in Resources */,
 				064B6F55173B13E9004AB1BF /* SLElementVisibilityTestCoveredByClearRegion.xib in Resources */,
 				064B6FC7173DCE9A004AB1BF /* SLElementVisibilityWithSubviews.xib in Resources */,
 				F0C27CDF1741694900335A41 /* SLElementStateTestMidpointCovered.xib in Resources */,
@@ -1201,8 +1240,10 @@
 				F0695DE9160138DF000B05D0 /* SLTestController.m in Sources */,
 				F0271B00162E0B950098F5F2 /* SLTestController+AppHooks.m in Sources */,
 				F02DF30917EC064F00BE28BF /* UIScrollView+SLProgrammaticScrolling.m in Sources */,
+				97378AA318B7F08F00B6188E /* SLTableView.m in Sources */,
 				CAC388061641CD7500F995F9 /* SLStringUtilities.m in Sources */,
 				CAC388401643503C00F995F9 /* NSObject+SLAccessibilityHierarchy.m in Sources */,
+				975393DC18B7EBC800BF93F6 /* SLToolbar.m in Sources */,
 				CA75E78516697C0000D57E92 /* SLDevice.m in Sources */,
 				F0C07A391703F95B00C93F93 /* SLAlert.m in Sources */,
 				F0C07A481703FEF600C93F93 /* SLButton.m in Sources */,
@@ -1219,6 +1260,7 @@
 				F04346B0175AD63E00D91F7F /* SLAccessibilityPath.m in Sources */,
 				F04346A8175AD10200D91F7F /* NSObject+SLVisibility.m in Sources */,
 				F0A3F63517A715AE007529C3 /* SLTextView.m in Sources */,
+				975393E318B7EDD500BF93F6 /* SLScrollView.m in Sources */,
 				DB501DCA17B9669A001658CB /* SLStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1236,6 +1278,7 @@
 				F0AC80C816BC367E00C5D5C0 /* SLTestViewController.m in Sources */,
 				F078C04A1808BF24000767D2 /* SLWebViewTestViewController.m in Sources */,
 				F0AC80E616BCF91800C5D5C0 /* SLTestCaseViewController.m in Sources */,
+				97378AAF18B7F42E00B6188E /* SLNavigationBarTestViewController.m in Sources */,
 				06953E3F178FDA7100B3D1B7 /* SLElementTouchAndHoldTest.m in Sources */,
 				F01B2B6D16D2C55900DBA391 /* SLElementMatchingTest.m in Sources */,
 				F01B2B6E16D2C55900DBA391 /* SLElementMatchingTestViewController.m in Sources */,
@@ -1266,6 +1309,7 @@
 				F00800E2174C2E0A001927AC /* SLPopoverTest.m in Sources */,
 				F00800E3174C2E0A001927AC /* SLPopoverTestViewController.m in Sources */,
 				0640035A178FDE7800479173 /* SLElementTouchAndHoldTestViewController.m in Sources */,
+				97378AAB18B7F3F400B6188E /* SLNavigationBarTest.m in Sources */,
 				F0A3F63D17A7172E007529C3 /* SLTextViewTest.m in Sources */,
 				F0A3F63E17A7172E007529C3 /* SLTextViewTestViewController.m in Sources */,
 				DB2627DE17B96727009DA3A6 /* SLStatusBarTest.m in Sources */,

@@ -8,11 +8,11 @@
 
 #import "SLIntegrationTest.h"
 
-@interface SLSwitchTest : SLIntegrationTest
+@interface focus_SLSwitchTest : SLIntegrationTest
 
 @end
 
-@implementation SLSwitchTest {
+@implementation focus_SLSwitchTest {
     SLSwitch *_aSwitch;
 }
 

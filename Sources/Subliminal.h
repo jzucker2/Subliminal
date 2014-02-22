@@ -39,5 +39,9 @@
 #import "SLTextView.h"
 #import "SLWebView.h"
 #import "SLWindow.h"
+#import "SLNavigationBar.h"
+#import "SLScrollView.h"
+#import "SLTableView.h"
+#import "SLToolbar.h"
 
 #import "SLLogger.h"

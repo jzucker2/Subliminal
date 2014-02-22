@@ -89,17 +89,17 @@
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     }
 
-    // If UIAutomation is unresponsive, show an alert and abort the application
-    if (![_terminalStartupResult isEqualToString:@"Hello world"]) {
-        NSTimeInterval abortTimeout = 5.0;
-        NSString *abortMessage = [NSString stringWithFormat:@"UIAutomation appears unresponsive. The application will abort in %g seconds.", abortTimeout];
-        [[[UIAlertView alloc] initWithTitle:@"Cannot Reach UIAutomation"
-                                    message:abortMessage
-                                   delegate:self
-                          cancelButtonTitle:@"Abort"
-                          otherButtonTitles:nil] show];
-        [NSTimer scheduledTimerWithTimeInterval:abortTimeout target:self selector:@selector(abort) userInfo:nil repeats:NO];
-    }
+//    // If UIAutomation is unresponsive, show an alert and abort the application
+//    if (![_terminalStartupResult isEqualToString:@"Hello world"]) {
+//        NSTimeInterval abortTimeout = .0;
+//        NSString *abortMessage = [NSString stringWithFormat:@"UIAutomation appears unresponsive. The application will abort in %g seconds.", abortTimeout];
+//        [[[UIAlertView alloc] initWithTitle:@"Cannot Reach UIAutomation"
+//                                    message:abortMessage
+//                                   delegate:self
+//                          cancelButtonTitle:@"Abort"
+//                          otherButtonTitles:nil] show];
+//        [NSTimer scheduledTimerWithTimeInterval:abortTimeout target:self selector:@selector(abort) userInfo:nil repeats:NO];
+//    }
 
     // Otherwise, run the tests
     [[SLTestController sharedTestController] runTests:[NSSet setWithArray:_tests] withCompletionBlock:nil];
