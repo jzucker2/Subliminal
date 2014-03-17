@@ -40,6 +40,11 @@
 		50A59BDB178490C2002A863A /* SLGeometryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */; };
 		50F3E18C1783A5CB00C6BD1B /* SLGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F3E18A1783A5CB00C6BD1B /* SLGeometry.h */; };
 		50F3E18E1783A60100C6BD1B /* SLGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F3E18B1783A5CB00C6BD1B /* SLGeometry.m */; };
+		975E955118D264D7002EDB8C /* SLTableViewCellChildElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E954E18D264D7002EDB8C /* SLTableViewCellChildElementsTests.m */; };
+		975E955218D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E954F18D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.m */; };
+		975E955318D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975E955018D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.xib */; };
+		975E955F18D38CFB002EDB8C /* heart_empty_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 975E955D18D38CFB002EDB8C /* heart_empty_icon&32.png */; };
+		975E956018D38CFB002EDB8C /* heart_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 975E955E18D38CFB002EDB8C /* heart_icon&32.png */; };
 		CA75E78216697A1200D57E92 /* SLDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = CA75E78016697A1200D57E92 /* SLDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA75E78516697C0000D57E92 /* SLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75E78116697A1200D57E92 /* SLDevice.m */; };
 		CAC388051641CD7500F995F9 /* SLStringUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC388031641CD7500F995F9 /* SLStringUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -272,6 +277,11 @@
 		50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGeometryTestViewController.m; sourceTree = "<group>"; };
 		50F3E18A1783A5CB00C6BD1B /* SLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGeometry.h; sourceTree = "<group>"; };
 		50F3E18B1783A5CB00C6BD1B /* SLGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGeometry.m; sourceTree = "<group>"; };
+		975E954E18D264D7002EDB8C /* SLTableViewCellChildElementsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCellChildElementsTests.m; sourceTree = "<group>"; };
+		975E954F18D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCellChildElementsTestsViewController.m; sourceTree = "<group>"; };
+		975E955018D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLTableViewCellChildElementsTestsViewController.xib; sourceTree = "<group>"; };
+		975E955D18D38CFB002EDB8C /* heart_empty_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_empty_icon&32.png"; sourceTree = "<group>"; };
+		975E955E18D38CFB002EDB8C /* heart_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_icon&32.png"; sourceTree = "<group>"; };
 		CA75E78016697A1200D57E92 /* SLDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDevice.h; sourceTree = "<group>"; };
 		CA75E78116697A1200D57E92 /* SLDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDevice.m; sourceTree = "<group>"; };
 		CAC388031641CD7500F995F9 /* SLStringUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLStringUtilities.h; sourceTree = "<group>"; };
@@ -514,6 +524,18 @@
 				50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */,
 			);
 			name = "SLGeometry Tests";
+			sourceTree = "<group>";
+		};
+		975E955718D264E7002EDB8C /* SLTableViewCellChildElementsTests */ = {
+			isa = PBXGroup;
+			children = (
+				975E954E18D264D7002EDB8C /* SLTableViewCellChildElementsTests.m */,
+				975E954F18D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.m */,
+				975E955018D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.xib */,
+				975E955D18D38CFB002EDB8C /* heart_empty_icon&32.png */,
+				975E955E18D38CFB002EDB8C /* heart_icon&32.png */,
+			);
+			name = SLTableViewCellChildElementsTests;
 			sourceTree = "<group>";
 		};
 		CAC388011641CD4800F995F9 /* Internal */ = {
@@ -912,6 +934,7 @@
 				F013798E16D0843B009BAF22 /* SLTerminal Tests */,
 				F078C0431808BF0D000767D2 /* SLWebView Tests */,
 				F089F98E17458B7400DF1F25 /* SLWindow Tests */,
+				975E955718D264E7002EDB8C /* SLTableViewCellChildElementsTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1206,6 +1229,7 @@
 				F090AE7016D9E01D000F0B6F /* SLElementVisibilityTestHidden.xib in Resources */,
 				F090AE7116D9E01D000F0B6F /* SLElementVisibilityTestLowAlpha.xib in Resources */,
 				F090AE7216D9E01D000F0B6F /* SLElementVisibilityTestOffscreen.xib in Resources */,
+				975E956018D38CFB002EDB8C /* heart_icon&32.png in Resources */,
 				F090AE7416D9E1D1000F0B6F /* SLElementVisibilityTestSuperviewHidden.xib in Resources */,
 				F0E80D8816DB2CEB00945D25 /* SLElementVisibilityTestElementContainerHidden.xib in Resources */,
 				F0E80D8916DB2CEB00945D25 /* SLElementVisibilityTestElementCovered.xib in Resources */,
@@ -1220,10 +1244,12 @@
 				F0C27CDF1741694900335A41 /* SLElementStateTestMidpointCovered.xib in Resources */,
 				F0C27CE917416EC400335A41 /* SLElementStateTestCompletelyCovered.xib in Resources */,
 				F00800C9174B3349001927AC /* SLButtonTestViewController.xib in Resources */,
+				975E955F18D38CFB002EDB8C /* heart_empty_icon&32.png in Resources */,
 				F00F3B5E1778E05100119580 /* SLElementTapTestScrollViewCases.xib in Resources */,
 				F00F3B6717790B4C00119580 /* SLStaticElementTestScrollView.xib in Resources */,
 				0640035B178FDE7800479173 /* SLElementTouchAndHoldTestViewController.xib in Resources */,
 				F0A3F63F17A7172E007529C3 /* SLTextViewTestViewController.xib in Resources */,
+				975E955318D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.xib in Resources */,
 				F0A3F64117A73198007529C3 /* SLWebTextView.html in Resources */,
 				DB2627E117B96974009DA3A6 /* SLStatusBarTestViewController.xib in Resources */,
 				2C903BC217F525E700555317 /* SLSwitchTestViewController.xib in Resources */,
@@ -1319,6 +1345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975E955118D264D7002EDB8C /* SLTableViewCellChildElementsTests.m in Sources */,
+				975E955218D264D7002EDB8C /* SLTableViewCellChildElementsTestsViewController.m in Sources */,
 				2C903BC017F525E700555317 /* SLSwitchTest.m in Sources */,
 				F0AC80A016BB299500C5D5C0 /* main.m in Sources */,
 				F0AC80A416BB299500C5D5C0 /* SLIntegrationTestsAppDelegate.m in Sources */,
