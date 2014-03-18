@@ -101,7 +101,7 @@
         [NSTimer scheduledTimerWithTimeInterval:abortTimeout target:self selector:@selector(abort) userInfo:nil repeats:NO];
     }
 
-    //[[SLTestController sharedTestController] setShouldWaitToStartTesting:YES];
+    [[SLTestController sharedTestController] setShouldWaitToStartTesting:YES];
     // Otherwise, run the tests
     [[SLTestController sharedTestController] runTests:[NSSet setWithArray:_tests] withCompletionBlock:nil];
 }
