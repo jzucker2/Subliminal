@@ -40,6 +40,11 @@
 		50A59BDB178490C2002A863A /* SLGeometryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */; };
 		50F3E18C1783A5CB00C6BD1B /* SLGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F3E18A1783A5CB00C6BD1B /* SLGeometry.h */; };
 		50F3E18E1783A60100C6BD1B /* SLGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F3E18B1783A5CB00C6BD1B /* SLGeometry.m */; };
+		975E956D18DB6C92002EDB8C /* SLTableViewCellChildElementsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E956A18DB6C92002EDB8C /* SLTableViewCellChildElementsTest.m */; };
+		975E956E18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E956B18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.m */; };
+		975E956F18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975E956C18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.xib */; };
+		975E957618DB6DBC002EDB8C /* heart_empty_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 975E957418DB6DBC002EDB8C /* heart_empty_icon&32.png */; };
+		975E957718DB6DBC002EDB8C /* heart_icon&32.png in Resources */ = {isa = PBXBuildFile; fileRef = 975E957518DB6DBC002EDB8C /* heart_icon&32.png */; };
 		CA75E78216697A1200D57E92 /* SLDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = CA75E78016697A1200D57E92 /* SLDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA75E78516697C0000D57E92 /* SLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75E78116697A1200D57E92 /* SLDevice.m */; };
 		CAC388051641CD7500F995F9 /* SLStringUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC388031641CD7500F995F9 /* SLStringUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -272,6 +277,11 @@
 		50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGeometryTestViewController.m; sourceTree = "<group>"; };
 		50F3E18A1783A5CB00C6BD1B /* SLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGeometry.h; sourceTree = "<group>"; };
 		50F3E18B1783A5CB00C6BD1B /* SLGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGeometry.m; sourceTree = "<group>"; };
+		975E956A18DB6C92002EDB8C /* SLTableViewCellChildElementsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCellChildElementsTest.m; sourceTree = "<group>"; };
+		975E956B18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCellChildElementsTestViewController.m; sourceTree = "<group>"; };
+		975E956C18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLTableViewCellChildElementsTestViewController.xib; sourceTree = "<group>"; };
+		975E957418DB6DBC002EDB8C /* heart_empty_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_empty_icon&32.png"; sourceTree = "<group>"; };
+		975E957518DB6DBC002EDB8C /* heart_icon&32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_icon&32.png"; sourceTree = "<group>"; };
 		CA75E78016697A1200D57E92 /* SLDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDevice.h; sourceTree = "<group>"; };
 		CA75E78116697A1200D57E92 /* SLDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDevice.m; sourceTree = "<group>"; };
 		CAC388031641CD7500F995F9 /* SLStringUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLStringUtilities.h; sourceTree = "<group>"; };
@@ -514,6 +524,18 @@
 				50A59BDA178490C2002A863A /* SLGeometryTestViewController.m */,
 			);
 			name = "SLGeometry Tests";
+			sourceTree = "<group>";
+		};
+		975E957318DB6C99002EDB8C /* SLTableViewCellChildElements Tests */ = {
+			isa = PBXGroup;
+			children = (
+				975E956A18DB6C92002EDB8C /* SLTableViewCellChildElementsTest.m */,
+				975E956B18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.m */,
+				975E956C18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.xib */,
+				975E957418DB6DBC002EDB8C /* heart_empty_icon&32.png */,
+				975E957518DB6DBC002EDB8C /* heart_icon&32.png */,
+			);
+			name = "SLTableViewCellChildElements Tests";
 			sourceTree = "<group>";
 		};
 		CAC388011641CD4800F995F9 /* Internal */ = {
@@ -909,6 +931,7 @@
 				2C903BB917F525C900555317 /* SLSwitch Tests */,
 				F01EBC951701150E00FF6A7C /* SLTextField Tests */,
 				F0A3F63917A716FC007529C3 /* SLTextView Tests */,
+				975E957318DB6C99002EDB8C /* SLTableViewCellChildElements Tests */,
 				F013798E16D0843B009BAF22 /* SLTerminal Tests */,
 				F078C0431808BF0D000767D2 /* SLWebView Tests */,
 				F089F98E17458B7400DF1F25 /* SLWindow Tests */,
@@ -1198,6 +1221,7 @@
 				F0AC80A816BB299500C5D5C0 /* Default@2x.png in Resources */,
 				F0AC80AA16BB299500C5D5C0 /* Default-568h@2x.png in Resources */,
 				F01B2B6F16D2C55900DBA391 /* SLElementMatchingTestViewController.xib in Resources */,
+				975E956F18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.xib in Resources */,
 				F0CEA00416D60EAD008A3B4A /* SLDeviceTestViewController.xib in Resources */,
 				068D3E4D16DE9008004E7E28 /* SLTableViewChildElementMatchingTestViewController.xib in Resources */,
 				0696BA5A16E013D600DD70CF /* SLElementDraggingTestViewController.xib in Resources */,
@@ -1205,6 +1229,7 @@
 				F077D70F16D9D77900908FF5 /* SLElementVisibilityTestCovered.xib in Resources */,
 				F090AE7016D9E01D000F0B6F /* SLElementVisibilityTestHidden.xib in Resources */,
 				F090AE7116D9E01D000F0B6F /* SLElementVisibilityTestLowAlpha.xib in Resources */,
+				975E957718DB6DBC002EDB8C /* heart_icon&32.png in Resources */,
 				F090AE7216D9E01D000F0B6F /* SLElementVisibilityTestOffscreen.xib in Resources */,
 				F090AE7416D9E1D1000F0B6F /* SLElementVisibilityTestSuperviewHidden.xib in Resources */,
 				F0E80D8816DB2CEB00945D25 /* SLElementVisibilityTestElementContainerHidden.xib in Resources */,
@@ -1219,6 +1244,7 @@
 				064B6FC7173DCE9A004AB1BF /* SLElementVisibilityWithSubviews.xib in Resources */,
 				F0C27CDF1741694900335A41 /* SLElementStateTestMidpointCovered.xib in Resources */,
 				F0C27CE917416EC400335A41 /* SLElementStateTestCompletelyCovered.xib in Resources */,
+				975E957618DB6DBC002EDB8C /* heart_empty_icon&32.png in Resources */,
 				F00800C9174B3349001927AC /* SLButtonTestViewController.xib in Resources */,
 				F00F3B5E1778E05100119580 /* SLElementTapTestScrollViewCases.xib in Resources */,
 				F00F3B6717790B4C00119580 /* SLStaticElementTestScrollView.xib in Resources */,
@@ -1323,6 +1349,7 @@
 				F0AC80A016BB299500C5D5C0 /* main.m in Sources */,
 				F0AC80A416BB299500C5D5C0 /* SLIntegrationTestsAppDelegate.m in Sources */,
 				F0AC80BD16BB50FF00C5D5C0 /* SLTestsViewController.m in Sources */,
+				975E956D18DB6C92002EDB8C /* SLTableViewCellChildElementsTest.m in Sources */,
 				F0AC80C416BC355D00C5D5C0 /* SLTerminalTest.m in Sources */,
 				F0AC80C116BB559F00C5D5C0 /* SLIntegrationTest.m in Sources */,
 				F0AC80C816BC367E00C5D5C0 /* SLTestViewController.m in Sources */,
@@ -1363,6 +1390,7 @@
 				DB2627DE17B96727009DA3A6 /* SLStatusBarTest.m in Sources */,
 				F078C0491808BF24000767D2 /* SLWebViewTest.m in Sources */,
 				DB2627DF17B96727009DA3A6 /* SLStatusBarTestViewController.m in Sources */,
+				975E956E18DB6C92002EDB8C /* SLTableViewCellChildElementsTestViewController.m in Sources */,
 				50A59BD81784908D002A863A /* SLGeometryTest.m in Sources */,
 				50A59BDB178490C2002A863A /* SLGeometryTestViewController.m in Sources */,
 			);
