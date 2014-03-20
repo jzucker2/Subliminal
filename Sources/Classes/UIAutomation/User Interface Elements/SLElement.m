@@ -121,6 +121,80 @@ UIAccessibilityTraits SLUIAccessibilityTraitAny = 0;
     } description:@"any element"];
 }
 
++ (instancetype)elementWithAccessibilityLabel:(NSString *)elementLabel value:(NSString *)elementValue traits:(UIAccessibilityTraits)traits inTableViewCellWithLabel:(NSString *)tvcLabel andValue:(NSString *)tvcValue
+{
+    NSString *traitsString;
+    if (traits == SLUIAccessibilityTraitAny) {
+        traitsString = @"(any)";
+    } else {
+        NSMutableArray *traitNames = [NSMutableArray array];
+
+        if (traits & UIAccessibilityTraitButton)                  [traitNames addObject:@"Button"];
+        if (traits & UIAccessibilityTraitLink)                    [traitNames addObject:@"Link"];
+        // UIAccessibilityTraitHeader is only available starting in iOS 6
+        if (kCFCoreFoundationVersionNumber > kCFCoreFoundationVersionNumber_iOS_5_1) {
+            if (traits & UIAccessibilityTraitHeader)                  [traitNames addObject:@"Header"];
+        }
+        if (traits & UIAccessibilityTraitSearchField)             [traitNames addObject:@"Search Field"];
+        if (traits & UIAccessibilityTraitImage)                   [traitNames addObject:@"Image"];
+        if (traits & UIAccessibilityTraitSelected)                [traitNames addObject:@"Selected"];
+        if (traits & UIAccessibilityTraitPlaysSound)              [traitNames addObject:@"Plays Sound"];
+        if (traits & UIAccessibilityTraitKeyboardKey)             [traitNames addObject:@"Keyboard Key"];
+        if (traits & UIAccessibilityTraitStaticText)              [traitNames addObject:@"Static Text"];
+        if (traits & UIAccessibilityTraitSummaryElement)          [traitNames addObject:@"Summary Element"];
+        if (traits & UIAccessibilityTraitNotEnabled)              [traitNames addObject:@"Not Enabled"];
+        if (traits & UIAccessibilityTraitUpdatesFrequently)       [traitNames addObject:@"Updates Frequently"];
+        if (traits & UIAccessibilityTraitStartsMediaSession)      [traitNames addObject:@"Starts Media Session"];
+        if (traits & UIAccessibilityTraitAdjustable)              [traitNames addObject:@"Adjustable"];
+        if (traits & UIAccessibilityTraitAllowsDirectInteraction) [traitNames addObject:@"Allows Direct Interaction"];
+        if (traits & UIAccessibilityTraitCausesPageTurn)          [traitNames addObject:@"Causes Page Turn"];
+
+        if ([traitNames count]) {
+            traitsString = [NSString stringWithFormat:@"(%@)", [traitNames componentsJoinedByString:@", "]];
+        } else {
+            traitsString = @"(none)";
+        }
+    }
+
+    return [[self alloc] initWithPredicate:^BOOL(NSObject *obj) {
+        BOOL matchesLabel   = ((elementLabel == nil) || [obj.accessibilityLabel isEqualToString:elementLabel]);
+        // in iOS 6.1 (at least), `UITextView` returns an attributed string from `-accessibilityValue`
+        // as does `UISearchBarTextField` in iOS 7  >.<
+        id accessibilityValue = obj.accessibilityValue;
+        if ([accessibilityValue isKindOfClass:[NSAttributedString class]]) {
+            accessibilityValue = [accessibilityValue string];
+        }
+        BOOL matchesValue   = ((elementValue == nil) || [accessibilityValue isEqualToString:elementValue]);
+        BOOL matchesTraits  = ((traits == SLUIAccessibilityTraitAny) || ((obj.accessibilityTraits & traits) == traits));
+        if (matchesLabel && matchesValue && matchesTraits) {
+            id accessibilityParent = [obj slAccessibilityParent];
+
+            //SLLogAsync(@"starting: accessibilityParent is %@", accessibilityParent);
+            while (accessibilityParent && ![[accessibilityParent accessibilityLabel] isEqualToString:tvcLabel]) {
+
+                accessibilityParent = [accessibilityParent slAccessibilityParent];
+                //SLLogAsync(@"get accessibilityParent that is now %@", accessibilityParent);
+
+            }
+
+
+            id doubleAccessibilityParent = [accessibilityParent slAccessibilityParent];
+
+            while (doubleAccessibilityParent && ![doubleAccessibilityParent isKindOfClass:[UITableView class]]) {
+                doubleAccessibilityParent = [doubleAccessibilityParent slAccessibilityParent];
+            }
+
+            if (doubleAccessibilityParent) {
+                return YES;
+            }
+            else {
+                return NO;
+            }
+        }
+        return NO;
+    } description:[NSString stringWithFormat:@"label: %@; value: %@; traits: %@; in UITableViewCell with label: %@; value: %@", elementLabel, elementValue, traitsString, tvcLabel, tvcValue]];
+}
+
 - (instancetype)initWithPredicate:(BOOL (^)(NSObject *))predicate description:(NSString *)description {
     self = [super init];
     if (self) {

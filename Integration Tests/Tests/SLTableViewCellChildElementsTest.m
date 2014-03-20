@@ -282,5 +282,149 @@
     
 }
 
+- (void)testMatchingTableViewCellWithNewMethod
+{
+    //    [[SLWindow mainWindow] logElementTree];
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"start"];
+    SLButton *favoriteButton = [SLButton elementWithAccessibilityLabel:@"Favorite" value:nil traits:UIAccessibilityTraitButton inTableViewCellWithLabel:@"Cell 2" andValue:nil];
+
+    //    SLLogAsync(@"favoriteButton is %@", favoriteButton);
+    //
+    //    SLLogAsync(@"favoriteButton isValidAndVisible is %d", [UIAElement(favoriteButton) isValidAndVisible]);
+    //    SLLogAsync(@"favoriteButton value is %@", [UIAElement(favoriteButton) value]);
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"off"], @"favorite button is not originally off");
+    //    SLLogAsync(@"favoriteButton isValid is %d", [UIAElement(favoriteButton) isValid]);
+    //    SLLogAsync(@"favoriteButton isVisible is %d", [UIAElement(favoriteButton) isVisible]);
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"Favorite button is not valid and visible");
+    [favoriteButton captureScreenshotWithFilename:@"fb: starting"];
+
+    [UIAElement(favoriteButton) tap];
+
+    [self wait:1];
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"after tap"];
+    [favoriteButton captureScreenshotWithFilename:@"fb: after first tap"];
+
+    //SLButton *unfavoriteButton = [SLButton elementWithAccessibilityLabel:@"Unfavorite"];
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"favorite button is not valid and visible after first time tapping");
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"on"], @"Favorite button does not has ax value of on");
+    [UIAElement(favoriteButton) tap];
+
+    [self wait:1];
+
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"off"], @"favorite button is not off at end of test");
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"Favorite button is not valid and visible");
+    [favoriteButton captureScreenshotWithFilename:@"fb: ending"];
+
+
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"end of test"];
+
+
+    //    SLLogAsync(@"testing");
+    //    SLLogAsync(@"favoriteButton is %@", favoriteButton);
+    //    SLLogAsync(@"favoriteButton description is %@", [favoriteButton slAccessibilityDescription]);
+    //    SLLogAsync(@"favoriteButton parent is %@", [favoriteButton slAccessibilityParent]);
+    //    SLLogAsync(@"favoriteButton recursive description is %@", [favoriteButton slRecursiveAccessibilityDescription]);
+    //    SLLogAsync(@"now log element tree for favorite button");
+    //    [favoriteButton logElementTree];
+    
+    
+}
+
+- (void)testMatchingTableViewCellWithNewMethodAnyTraits
+{
+    //    [[SLWindow mainWindow] logElementTree];
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"start"];
+    SLButton *favoriteButton = [SLButton elementWithAccessibilityLabel:@"Favorite" value:nil traits:SLUIAccessibilityTraitAny inTableViewCellWithLabel:@"Cell 2" andValue:nil];
+
+    //    SLLogAsync(@"favoriteButton is %@", favoriteButton);
+    //
+    //    SLLogAsync(@"favoriteButton isValidAndVisible is %d", [UIAElement(favoriteButton) isValidAndVisible]);
+    //    SLLogAsync(@"favoriteButton value is %@", [UIAElement(favoriteButton) value]);
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"off"], @"favorite button is not originally off");
+    //    SLLogAsync(@"favoriteButton isValid is %d", [UIAElement(favoriteButton) isValid]);
+    //    SLLogAsync(@"favoriteButton isVisible is %d", [UIAElement(favoriteButton) isVisible]);
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"Favorite button is not valid and visible");
+    [favoriteButton captureScreenshotWithFilename:@"fb: starting"];
+
+    [UIAElement(favoriteButton) tap];
+
+    [self wait:1];
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"after tap"];
+    [favoriteButton captureScreenshotWithFilename:@"fb: after first tap"];
+
+    //SLButton *unfavoriteButton = [SLButton elementWithAccessibilityLabel:@"Unfavorite"];
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"favorite button is not valid and visible after first time tapping");
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"on"], @"Favorite button does not has ax value of on");
+    [UIAElement(favoriteButton) tap];
+
+    [self wait:1];
+
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"off"], @"favorite button is not off at end of test");
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"Favorite button is not valid and visible");
+    [favoriteButton captureScreenshotWithFilename:@"fb: ending"];
+
+
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"end of test"];
+
+
+    //    SLLogAsync(@"testing");
+    //    SLLogAsync(@"favoriteButton is %@", favoriteButton);
+    //    SLLogAsync(@"favoriteButton description is %@", [favoriteButton slAccessibilityDescription]);
+    //    SLLogAsync(@"favoriteButton parent is %@", [favoriteButton slAccessibilityParent]);
+    //    SLLogAsync(@"favoriteButton recursive description is %@", [favoriteButton slRecursiveAccessibilityDescription]);
+    //    SLLogAsync(@"now log element tree for favorite button");
+    //    [favoriteButton logElementTree];
+    
+    
+}
+
+- (void)testMatchingTableViewCellWithNewMethodAnyTraitsAndElement
+{
+    //    [[SLWindow mainWindow] logElementTree];
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"start"];
+    SLElement *favoriteButton = [SLElement elementWithAccessibilityLabel:@"Favorite" value:nil traits:SLUIAccessibilityTraitAny inTableViewCellWithLabel:@"Cell 2" andValue:nil];
+
+    //    SLLogAsync(@"favoriteButton is %@", favoriteButton);
+    //
+    //    SLLogAsync(@"favoriteButton isValidAndVisible is %d", [UIAElement(favoriteButton) isValidAndVisible]);
+    //    SLLogAsync(@"favoriteButton value is %@", [UIAElement(favoriteButton) value]);
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"off"], @"favorite button is not originally off");
+    //    SLLogAsync(@"favoriteButton isValid is %d", [UIAElement(favoriteButton) isValid]);
+    //    SLLogAsync(@"favoriteButton isVisible is %d", [UIAElement(favoriteButton) isVisible]);
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"Favorite button is not valid and visible");
+    [favoriteButton captureScreenshotWithFilename:@"fb: starting"];
+
+    [UIAElement(favoriteButton) tap];
+
+    [self wait:1];
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"after tap"];
+    [favoriteButton captureScreenshotWithFilename:@"fb: after first tap"];
+
+    //SLButton *unfavoriteButton = [SLButton elementWithAccessibilityLabel:@"Unfavorite"];
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"favorite button is not valid and visible after first time tapping");
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"on"], @"Favorite button does not has ax value of on");
+    [UIAElement(favoriteButton) tap];
+
+    [self wait:1];
+
+    SLAssertTrue([UIAElement(favoriteButton.value) isEqualToString:@"off"], @"favorite button is not off at end of test");
+    SLAssertTrue([UIAElement(favoriteButton) isValidAndVisible], @"Favorite button is not valid and visible");
+    [favoriteButton captureScreenshotWithFilename:@"fb: ending"];
+
+
+    [[SLDevice currentDevice] captureScreenshotWithFilename:@"end of test"];
+
+
+    //    SLLogAsync(@"testing");
+    //    SLLogAsync(@"favoriteButton is %@", favoriteButton);
+    //    SLLogAsync(@"favoriteButton description is %@", [favoriteButton slAccessibilityDescription]);
+    //    SLLogAsync(@"favoriteButton parent is %@", [favoriteButton slAccessibilityParent]);
+    //    SLLogAsync(@"favoriteButton recursive description is %@", [favoriteButton slRecursiveAccessibilityDescription]);
+    //    SLLogAsync(@"now log element tree for favorite button");
+    //    [favoriteButton logElementTree];
+    
+    
+}
+
 
 @end
