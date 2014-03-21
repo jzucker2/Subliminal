@@ -168,22 +168,13 @@ UIAccessibilityTraits SLUIAccessibilityTraitAny = 0;
         BOOL matchesTraits  = ((traits == SLUIAccessibilityTraitAny) || ((obj.accessibilityTraits & traits) == traits));
         if (matchesLabel && matchesValue && matchesTraits) {
             id accessibilityParent = [obj slAccessibilityParent];
-
-            //SLLogAsync(@"starting: accessibilityParent is %@", accessibilityParent);
             while (accessibilityParent && ![[accessibilityParent accessibilityLabel] isEqualToString:tvcLabel]) {
-
                 accessibilityParent = [accessibilityParent slAccessibilityParent];
-                //SLLogAsync(@"get accessibilityParent that is now %@", accessibilityParent);
-
             }
-
-
             id doubleAccessibilityParent = [accessibilityParent slAccessibilityParent];
-
             while (doubleAccessibilityParent && ![doubleAccessibilityParent isKindOfClass:[UITableView class]]) {
                 doubleAccessibilityParent = [doubleAccessibilityParent slAccessibilityParent];
             }
-
             if (doubleAccessibilityParent) {
                 return YES;
             }

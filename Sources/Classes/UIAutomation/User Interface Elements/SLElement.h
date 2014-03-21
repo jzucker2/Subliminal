@@ -135,6 +135,8 @@
 
 + (instancetype)elementWithAccessibilityLabel:(NSString *)elementLabel value:(NSString *)elementValue traits:(UIAccessibilityTraits)traits inTableViewCellWithLabel:(NSString *)tvcLabel andValue:(NSString *)tvcValue;
 
++ (instancetype)elementWithProperties:(NSString *)elementProperties inParentWithProperties:(NSString *)parentProperties;
+
 #pragma mark - Gestures and Actions
 /// ------------------------------------------
 /// @name Gestures and Actions
